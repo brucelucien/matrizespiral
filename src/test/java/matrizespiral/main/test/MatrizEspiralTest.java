@@ -62,7 +62,6 @@ public class MatrizEspiralTest {
 	@Test
 	public void deveImprimir6x3() {
 		MatrizEspiral matrizEspiral = new MatrizEspiral(6, 3);
-		System.out.println(matrizEspiral);
 		assertEquals(
 				String.format(
 						"%s    1    2    3%s   14   15    4%s   13   16    5%s   12   17    6%s   11   18    7%s   10    9    8%s%s>>> (6 x 3)",
