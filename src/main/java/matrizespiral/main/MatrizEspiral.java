@@ -2,7 +2,6 @@ package matrizespiral.main;
 
 import java.util.Arrays;
 
-import matrizespiral.core.CriadorDeMatrizesZeradas;
 import matrizespiral.core.PopuladorDeMatrizesEspirais;
 
 public class MatrizEspiral {
@@ -10,8 +9,7 @@ public class MatrizEspiral {
 	private Integer[][] matriz;
 
 	public MatrizEspiral(Integer qtdLinhas, Integer qtdColunas) {
-		CriadorDeMatrizesZeradas criadorDeMatrizesZeradas = new CriadorDeMatrizesZeradas();
-		matriz = criadorDeMatrizesZeradas.criar(qtdLinhas, qtdColunas);
+		matriz = new Integer[qtdLinhas][qtdColunas];
 		PopuladorDeMatrizesEspirais populador = new PopuladorDeMatrizesEspirais();
 		populador.popular(matriz);
 	}
